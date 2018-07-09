@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Quicksand&subset=latin-ext');
+
+body {
+  font-family: 'Open Sans', 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  opacity: .75;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%
+}
+
+section:not(:first-of-type) {
+  margin-top: 30px;
+}
+
+hr {
+  height: 3px;
+  width: 250px;
+  background: #4CBB17;
+  margin: 20px 0;
+  border: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, .1);
+  align-items: baseline;
+  transition: .5s ease;
+  z-index: 1;
+  box-shadow: 1px 4px 30px -12px rgba(0,0,0,0.75);
+}
+
+.navbar.green {
+  background-color: rgba(22, 171, 57, .9)
+}
+
+.menu {
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  padding: 15px 15px;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: white;
+  opacity: .95;
+}
+
+.NegativeMessage {
+  color: red;
+}
+
+.landing {
+  justify-content: center;
+}
+
+.video {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero-header {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.hero-header-button {
+  background-color: rgb(22, 171, 57);
+  color: white;
+  margin-top: 30px;
+  padding: 15px 35px;
+  border-radius: 3px;
+
+}
+
+.hero-header-button:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.formContainer {
+  margin-top: 100px;
+}
